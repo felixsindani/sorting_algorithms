@@ -1,6 +1,20 @@
 #include "sort.h"
 
 /**
+ * swap_two_intergers - Swaps two integers of array.
+ * @a: The first integer
+ * @b: The second integer
+ */
+void swap_two_intergers(int *a, int *b)
+{
+        int tmp;
+
+        tmp = *a;
+        *a = *b;
+        *b = tmp;
+}
+
+/**
  * selection_sort - sorts a doubly linked list of integers
  * in ascending order using the Insertion sort algorithm
  * @array: An array of integers
@@ -27,17 +41,4 @@ void selection_sort(int *array, size_t size)
 			print_array(array, size);
 		}
 	}
-}
-/**
- * swap_two_intergers - Swaps two integers of array.
- * @a: The first integer
- * @b: The second integer
- */
-void swap_two_intergers(int *a, int *b)
-{
-	int tmp;
-
-	tmp = *a;
-	*a = *b;
-	*b = tmp;
 }
